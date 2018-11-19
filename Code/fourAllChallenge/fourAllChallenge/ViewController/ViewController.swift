@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var tasks = [Task]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+     
+        
+        Request.requestListOfTasks(completion: {[weak self] taskList in
+            for taskID in (taskList?.idList)! {
+                Request.requestTask(id: taskID, completion: {[weak self] task in
+                    self?.tasks.append(task!)
+                })
+            }
+        })
     }
 
 

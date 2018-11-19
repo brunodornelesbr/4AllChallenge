@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BBC04A0DE079515F14C9B8A /* Pods_fourAllChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38A58EA4FFD8BDA3C5C44E7 /* Pods_fourAllChallenge.framework */; };
 		9AEF517621A2D008003D736B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF517521A2D008003D736B /* AppDelegate.swift */; };
 		9AEF517821A2D008003D736B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF517721A2D008003D736B /* ViewController.swift */; };
 		9AEF517B21A2D008003D736B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEF517921A2D008003D736B /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		9AEF517C21A2D00A003D736B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AEF517F21A2D00A003D736B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AEF518121A2D00A003D736B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A38A58EA4FFD8BDA3C5C44E7 /* Pods_fourAllChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourAllChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A96BD8F1C427E39C150BA1 /* Pods-fourAllChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourAllChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fourAllChallenge/Pods-fourAllChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		CF6EDE721457C7AAE5397598 /* Pods-fourAllChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourAllChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-fourAllChallenge/Pods-fourAllChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BBC04A0DE079515F14C9B8A /* Pods_fourAllChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638F177D2AB5759F51696C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A38A58EA4FFD8BDA3C5C44E7 /* Pods_fourAllChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9AEF516921A2D008003D736B = {
 			isa = PBXGroup;
 			children = (
 				9AEF517421A2D008003D736B /* fourAllChallenge */,
 				9AEF517321A2D008003D736B /* Products */,
+				CCA7AB8D4B2624261E52B1DD /* Pods */,
+				638F177D2AB5759F51696C5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +95,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CCA7AB8D4B2624261E52B1DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4A96BD8F1C427E39C150BA1 /* Pods-fourAllChallenge.debug.xcconfig */,
+				CF6EDE721457C7AAE5397598 /* Pods-fourAllChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AEF518421A2D00A003D736B /* Build configuration list for PBXNativeTarget "fourAllChallenge" */;
 			buildPhases = (
+				DDC097E7E77BBBF339B956A5 /* [CP] Check Pods Manifest.lock */,
 				9AEF516E21A2D008003D736B /* Sources */,
 				9AEF516F21A2D008003D736B /* Frameworks */,
 				9AEF517021A2D008003D736B /* Resources */,
+				C44022EAA85B1CA1642C2CA7 /* [CP] Embed Pods Frameworks */,
+				8143F122EF6E8D2A198DBA45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8143F122EF6E8D2A198DBA45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fourAllChallenge/Pods-fourAllChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C44022EAA85B1CA1642C2CA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fourAllChallenge/Pods-fourAllChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fourAllChallenge/Pods-fourAllChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC097E7E77BBBF339B956A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fourAllChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AEF516E21A2D008003D736B /* Sources */ = {
@@ -296,15 +383,13 @@
 		};
 		9AEF518521A2D00A003D736B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4A96BD8F1C427E39C150BA1 /* Pods-fourAllChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = fourAllChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.fourAllChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -314,15 +399,13 @@
 		};
 		9AEF518621A2D00A003D736B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF6EDE721457C7AAE5397598 /* Pods-fourAllChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = fourAllChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.fourAllChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

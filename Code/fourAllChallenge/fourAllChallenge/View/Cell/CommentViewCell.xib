@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain-storm-photo-getty-images" translatesAutoresizingMaskIntoConstraints="NO" id="4Hq-WN-iZu">
-                        <rect key="frame" x="36" y="16" width="50" height="50"/>
+                        <rect key="frame" x="26" y="16" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="Uy0-8p-6Gn"/>
                             <constraint firstAttribute="height" constant="50" id="Zh2-Ic-hgL"/>
@@ -144,7 +144,7 @@
                                     <constraint firstAttribute="bottom" secondItem="kgd-KF-Kcd" secondAttribute="bottom" id="xtR-aw-fHF"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdH-3z-3W8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdH-3z-3W8">
                                 <rect key="frame" x="0.0" y="32" width="258" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.79215686269999996" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,11 +154,11 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="F2Z-FF-S5d" firstAttribute="leading" secondItem="4Hq-WN-iZu" secondAttribute="trailing" constant="5" id="46I-Vl-a6j"/>
+                    <constraint firstItem="F2Z-FF-S5d" firstAttribute="leading" secondItem="4Hq-WN-iZu" secondAttribute="trailing" constant="15" id="46I-Vl-a6j"/>
                     <constraint firstAttribute="bottomMargin" secondItem="F2Z-FF-S5d" secondAttribute="bottom" constant="8" id="6yi-SO-g8F"/>
                     <constraint firstAttribute="trailingMargin" secondItem="F2Z-FF-S5d" secondAttribute="trailing" constant="10" id="HLL-OP-2UY"/>
                     <constraint firstItem="4Hq-WN-iZu" firstAttribute="top" secondItem="1gK-qK-fKs" secondAttribute="topMargin" constant="5" id="WtJ-vD-NDG"/>
-                    <constraint firstItem="4Hq-WN-iZu" firstAttribute="leading" secondItem="1gK-qK-fKs" secondAttribute="leadingMargin" constant="20" id="Zx3-cI-y8x"/>
+                    <constraint firstItem="4Hq-WN-iZu" firstAttribute="leading" secondItem="1gK-qK-fKs" secondAttribute="leadingMargin" constant="10" id="Zx3-cI-y8x"/>
                     <constraint firstItem="F2Z-FF-S5d" firstAttribute="top" secondItem="4Hq-WN-iZu" secondAttribute="top" id="y50-01-iIp"/>
                 </constraints>
             </tableViewCellContentView>

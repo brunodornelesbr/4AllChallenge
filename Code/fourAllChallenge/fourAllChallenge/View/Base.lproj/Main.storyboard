@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main list-->
+        <!--Lista de Ids-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fourAllChallenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main list" id="NwW-kV-mAd"/>
+                    <navigationItem key="navigationItem" title="Lista de Ids" id="NwW-kV-mAd"/>
                     <connections>
                         <outlet property="tableView" destination="LuT-F8-0Wm" id="a7t-ho-IYd"/>
                         <segue destination="mSy-sM-5qs" kind="show" identifier="showMain" id="z37-NH-s4J"/>
@@ -61,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="118.29085457271366"/>
         </scene>
-        <!--Title-->
+        <!--Carregando-->
         <scene sceneID="VDN-ig-IzY">
             <objects>
                 <viewController id="mSy-sM-5qs" customClass="MainViewController" customModule="fourAllChallenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,7 +100,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qw7-fx-Jy0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="BdD-5L-AuQ">
+                    <navigationItem key="navigationItem" title="Carregando" id="BdD-5L-AuQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="cHO-LN-n4t"/>
                     </navigationItem>
                     <connections>

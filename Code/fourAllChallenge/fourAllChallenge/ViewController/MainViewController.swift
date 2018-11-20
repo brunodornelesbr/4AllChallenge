@@ -92,9 +92,13 @@ extension MainViewController : MainViewModelProtocol{
         optionsTableViewCell.mainTextView.text = mainViewModel.task?.text
         optionsTableViewCell.streetNameLabel.text = mainViewModel.task?.address
         let initialLocation = CLLocation(latitude: (mainViewModel.task?.latitude)!, longitude:(mainViewModel.task?.longitude)!)
+        let annotation = MKPointAnnotation()
+
         let region = MKCoordinateRegion(center: initialLocation.coordinate,
                                         latitudinalMeters: 300, longitudinalMeters: 300)
         optionsTableViewCell.mapView.setRegion(region, animated: true)
+        annotation.coordinate = initialLocation.coordinate
+        optionsTableViewCell.mapView.addAnnotation(annotation)
         tableView.reloadData()
     }
     

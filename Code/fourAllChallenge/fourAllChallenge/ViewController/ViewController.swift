@@ -24,7 +24,10 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
-        case mainIdentifier : break
+        case mainIdentifier :
+            if let destination =  segue.destination as? MainViewController {
+                destination.mainViewModel = MainViewModel(taskId: sender as! String)
+            }
         default : break
         }
     }
